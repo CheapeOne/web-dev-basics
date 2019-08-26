@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Step 4: Server</title>
+  <link rel="stylesheet"  href="style.css" ></link>
+</head>
+<body>
+  <section class="content">
+    <h1>Servers</h1>
+    
+    <p>When we can talk to a server, we can branch out of the confines of the user's computer. We can now do expensive computations off-site on a different computer, with the user not having to do anything but request them. We can persist data in the cloud, perhaps in a database, and allow a user to access the same info from multiple computers.</p>
+
+    <p>I've added a python server that this webpage can talk to. When you click the add button below, instead of adding just to the page source, we also save the circles on the server. When you click on a circle, it deletes it. When you refresh the page, the state of your list should be the same. (though I wrote it so the data is only stored within the server's memory, so if you restart the server it will go away. This would be where an actual db would come in handy)</p>
+
+    <p class="centered-text"><i>*** Consult the readme included with this step to start the python server. ***</i></p>
+
+    <div class="circle-buttons">
+      <button class="circle-button" id="add-button">Add circle</button>
+    </div>
+
+    <div id="circles-container"></div>
+
+  </section>
+
+  <section class="content">
+    <p>Notice how we've offloaded the javascript state logic to the server. While web browsers can only execute javascript, a server can run whatever language we want. This has some of the following benefits:
+    <ul>
+      <li>much faster than a personal computer</li>
+      <li>persist data from multiple users</li>
+      <li>user <-> user interaction</li>
+      <li>run code on the backend while the user is not online</li>
+    </ul>
+
+    <p>However, running logic on the server instead of in the browser does have drawbacks:</p>
+    <ul>
+      <li>It takes time to communicate with a distant server. Lag makes the UI of the site feel slow.</li>
+      <li>Transfering too much data between the frontend and the backend, or too frequently, can make the code complicated</li>
+    </ul>
+
+    <p>To keep the experience of using the site smooth, usually one puts UI logic on the frontend ('the client') and persist any data with calls to the backend ('the server').</p>
+  </section>
+  <section class="content">
+    <p>Here's one thing I'll leave you with: how could you build on this? Some ideas to think through, you now have all the tools you need to make them a reality:</p>
+    <ul>
+      <li>Store something other than circles, perhaps blog posts. You could have a page to create blog posts, and a page to view a list of them. You'd store blog posts on the server.</li>
+      <li>Spruce up the styling. You can use your own css, or look at some libraries (Bootstrap is a popular one)</li>
+      <li>Add users, with a signin screen</li>
+    </ul>
+  </section>
+  <script src="main.js" ></script>
+</body>
+</html>

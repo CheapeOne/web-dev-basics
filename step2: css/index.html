@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Look at me! a page title!</title>
+  <style>
+    h1, p {
+      font-family: sans-serif;
+    }
+
+    p {
+      line-height: 1.5rem;
+    }
+
+    body {
+      background: #f0f0f0;
+    }
+
+    .content {
+      background: white;
+      width: 800px;
+      margin: 0 auto;
+      padding: 48px;
+      height: 100%;
+      border-radius: 12px;
+      border: 2px solid #cccccc
+    }
+
+    .centered-text {
+      text-align: center;
+    }
+
+    .green {
+      color: lightgreen;
+    }
+
+    .circles {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .circle {
+      border-radius: 100%;
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      transition: background 0.2s ease-in;
+    }
+
+    .red {
+      background: red;
+    }
+
+    :hover.green-hover {
+      background: greenyellow;
+    }
+
+    :hover.blue-hover {
+      background: lightblue;
+    }
+
+    :hover.violet-hover {
+      background: violet;
+    }
+
+  </style>
+</head>
+<body>
+  <section class="content">
+    <h1>CSS: Adding style</h1>
+    <p>Here's a <span class="green">styled up</span> html page. You style html using CSS, adding colors, margins, animations. The CSS in this case is right in the "style" tag of this html. It's nested below the "head" tag, which normally holds any metadata about the page. It's placed here so that the browser reads it first before trying to display any of the content within the "body" tag.</p>
+
+    <p class="centered-text">(check the title of this page on the tab in your browser, it's the same as the title tag in the head!)</p>
+
+    <p>You can do all sorts of crazy things with css, so I won't dwell on it here. Here's a bunch of circles which change color when you hover. Notice the 'transition' property in the css for 'circle':</p>
+
+    <div class="circles">
+      <div class="circle red green-hover" ></div>
+      <div class="circle red blue-hover" ></div>
+      <div class="circle red violet-hover" ></div>
+      <div class="circle red green-hover" ></div>
+      <div class="circle red blue-hover" ></div>
+      <div class="circle red violet-hover" ></div>
+      <div class="circle red green-hover" ></div>
+      <div class="circle red blue-hover" ></div>
+      <div class="circle red violet-hover" ></div>
+      <div class="circle red green-hover" ></div>
+      <div class="circle red blue-hover" ></div>
+      <div class="circle red violet-hover" ></div>
+      <div class="circle red green-hover" ></div>
+      <div class="circle red blue-hover" ></div>
+      <div class="circle red violet-hover" ></div>
+    </div>
+
+    <p>If you're looking at the source for this page, you'll notice the <i>size</i> of the css. It can get to be alot pretty quickly. While here it's included entirely within the page souce, we can (and should) split it out into its own files. This way multiple pages can reuse some of the css, for instance if we want every button to look the same way.</p>
+
+  </section>
+</body>
+</html>

@@ -1,0 +1,93 @@
+h1, p, li {
+  font-family: sans-serif;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.content {
+  background: white;
+  width: 800px;
+  margin: 0 auto;
+  padding: 48px;
+  height: 100%;
+  border-radius: 12px;
+  border: 2px solid #cccccc
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.green {
+  color: lightgreen;
+}
+
+#circles-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.circle {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  transition: background 0.2s ease-in;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
+
+.green {
+  background: greenyellow;
+}
+
+:hover.red-hover {
+  background: red;
+}
+
+.circle-buttons {
+  margin: 24px 0;
+}
+
+.circle-button {
+  height: 48px;
+  width: 200px;
+  border-radius: 10px;
+  background: white;
+  font-size: 1rem;
+  color: white;
+}
+
+#add-button {
+  background-color: lightgreen;
+}
+
+#add-button:active {
+  background-color: darkseagreen;
+}
+
+#remove-button {
+  background-color: lightcoral;
+}
+
+#remove-button:active {
+  background-color: palevioletred;
+}
+
+
+

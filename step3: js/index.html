@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Step 3: JS</title>
+  <link rel="stylesheet"  href="style.css" ></link>
+</head>
+<body>
+  <section class="content">
+    <h1>JS: Interactivity</h1>
+    
+    <p>Ahh javascript. Lets you add interactivity to your websites. I have the same circles as before, only now there's a button you can click to add more.</p>
+    <p>I split out the js into its own file, but rest assured you can also include the javascript inline within a "script" tag. This is similar to last step where I included the css inline within a "style" tag. The difference here is the javascript I include at the very end of the document. This is so the page is shown to the user quickly, and any interactive code is read by the browser after everything's on screen.</p>
+
+    <p>Notice though that when you refresh the page, the state of your list of circles goes away. This is because what you changed is only reflected in the page's javascript, which got reloaded. To persist data, we'll need to talk to something outside of the browser...</p>
+
+    <div class="circle-buttons">
+      <button class="circle-button" id="add-button">Add circle</button>
+      <button class="circle-button" id="remove-button">Remove circle</button>
+    </div>
+
+    <div id="circles-container">
+      <div class="circle red green-hover"></div>
+    </div>
+
+  </section>
+  <script src="main.js" ></script>
+</body>
+</html>
